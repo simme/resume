@@ -117,10 +117,10 @@ Theme.prototype.loadTemplate = function (themePath, callback) {
 };
 
 Theme.prototype.loadTransformer = function (themePath, callback) {
-  const transformerPath = path.join(themePath, 'transformer');
+  const transformerPath = path.join(themePath, 'transformer.js');
   try {
     this.transformer = require(transformerPath);
-  } catch (err) {}
+  } catch (err) { console.log(err); }
   callback();
 };
 

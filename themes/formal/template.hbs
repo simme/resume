@@ -3,21 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>{{info.name}}</title>
+    <link rel="stylesheet" href="/build/formal/master.css">
+    <script src="https://use.typekit.net/awb4xot.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
     <header class="page-header">
       {{#with info}}
-        <h1>{{name}}</h1>
-        <span class="tagline">{{title}}</span>
-        <span class="dob">{{dob}}</span>
+        <h1 class="page-title">{{name}}</h1>
+        <p class="page-tagline">{{title}}</p>
+
+        <ul class="page-meta">
+          <li class="page-meta-item dob">{{dob}}</li>
+          <li class="page-meta-item"><a href="tel://{{phone}}" class="phone">{{phone}}</a></li>
+          <li class="page-meta-item"><a href="https://github.com/{{github}}" class="github">{{github}}</a></li>
+          <li class="page-meta-item"><a href="https://twitter.com/{{twitter}}" class="twitter">{{twitter}}</a></li>
+          <li class="page-meta-item"><a href="https://instagram.com/{{instagram}}" class="instagram">{{instagram}}</a></li>
+          <li class="page-meta-item"><a href="{{blog}}" class="blog">{{blog}}</a></li>
+        </ul>
+        <div class="me-description">{{{description}}}</div>
       {{/with}}
     </header>
     <main role="main" class="page-main">
+      <h2 class="section-title">Erfarenhet</h2>
       {{#each jobs}}
-        <section class="job">
-          <h2>{{title}}</h2>
-          <span class="date-range">{{start}} &mdash; {{end}}</span>
-        </section>
+        {{> job}}
       {{/each}}
     </main>
     <footer>

@@ -8,7 +8,8 @@ const Theme = require('./theme');
 
 const through = require('through2');
 const Gulp = require('gulp');
-const Watch = require('gulp-watch');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 
 function render(theme, tpath) {
   var t = new Theme(theme, tpath);
@@ -31,10 +32,18 @@ function render(theme, tpath) {
 Gulp.task('render', function() {
   Gulp.src('./*.yaml')
     .pipe(render('formal'))
-    .pipe(Gulp.dest('build/'));
+    .pipe(Gulp.dest('./build/'));
+});
+
+Gulp.task('css', function () {
+  Gulp.src('./themes/**/master.scss')
+    .pipe(sass())
+    .pipe(autoprefixer())
+    .pipe(Gulp.dest('./build/'));
 });
 
 Gulp.task('watch', function () {
   Gulp.watch('./*.yaml', ['render']);
   Gulp.watch('./themes/**/*.hbs', ['render']);
+  Gulp.watch('./themes/**/*.scss', ['css']);
 });

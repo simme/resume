@@ -1,1 +1,28 @@
-<h1>{{title}}</h1>
+<section class="job">
+  <h3 class="job-title">{{title}}</h3>
+  <span class="job-date-range">{{date-range start end}}</span>
+
+  <div class="job-data">
+    <div class="job-description">
+      {{orphan-killer description}}
+    </div>
+
+    {{#if projects.length}}
+      <h4 class="job-subtitle">Projektexempel</h4>
+      <ul class="job-projects">
+        {{#each projects}}
+          <li class="project">
+            <h3 class="project-title">{{title}}</h3>
+            <div class="project-description">
+              {{orphan-killer description}}
+            </div>
+
+            {{#if url}}
+              <a class="project-visit" href="{{url}}">{{url}}</a>
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </div>
+</section>

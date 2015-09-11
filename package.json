@@ -11,11 +11,17 @@
   "dependencies": {
     "async": "^1.4.2",
     "handlebars": "^4.0.2",
-    "js-yaml": "^3.4.2"
+    "js-yaml": "^3.4.2",
+    "node-markdown": "^0.1.1",
+    "node-sass": "^3.3.2"
   },
   "devDependencies": {
+    "browserify": "^11.1.0",
     "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-sass": "^2.0.4",
     "gulp-watch": "^4.3.5",
+    "sass": "^0.5.0",
     "through2": "^2.0.0"
   }
 }

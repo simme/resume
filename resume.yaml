@@ -11,6 +11,9 @@ info:
   linkedin: https://se.linkedin.com/pub/simon-ljungberg/19/a44/5b6
   twitter: '@simmelj'
   instagram: '@simmelj'
+  blog: http://iamsim.me
+  description: Hallå, jag är en frilansande web och iOS-utvecklare med många års
+    erfarenhet av att bygga digitala produkter på liten och stor skala.
 jobs:
 - title: NimNim Digital Workshop
   location: Hässleholm
@@ -86,9 +89,53 @@ jobs:
   url: https://www.bloglovin.com
   start: 2013-04
   end: 2015-05
-  description: Som `Lead Front-end Developer` ansvarade jag för att bygga upp
+  description: Som **Lead Front-end Developer** ansvarade jag för att bygga upp
     en helt ny webfrontend för bloglovin.com. Vi byggde en Node.js-applikation
     som pratade med ett API för att hämta data som sedan renderades med Jade.
+  projects:
+    - title: www.bloglovin.com
+      url: https://www.bloglovin.com
+      description: Node.js-applikation som hanterade kommunikation mot ett API
+        för att hämta användardata och rendera HTML. Servade som mest 30M unika
+        besökare per månad.
+    - title: Furcape
+      url: https://github.com/bloglovin/furcape
+      description: Byggde grunden till ett system för AB-testning. Detta byttes
+        senare ut. Men denna kod skötte AB-testning på Bloglovin.com i ca. ett år.
+- title: Open Source
+  start: 2008
+  end: present
+  description: Mitt [GitHub-konto](https://github.com/simme) innehåller mycket
+    kod som jag släppt öppen. Mycket av det relaterar till
+    [Ampersand.js](http://ampersandjs.com). Här är några av mina
+    personliga favoriter.
+  projects:
+    - title: Browbeat
+      url: https://github.com/simme/browbeat
+      description: Ett experimentelt bibliotek vars syfte var att förenkla
+        kommunikation mellan flera browserfönster. Använder Bully-algoritmen för
+        att välja ett "chefs" fönster. Detta för att kunna optimera användning av
+        resurser så som websockets.
+    - title: Tala
+      url: https://github.com/simme/node-tala
+      description: Kommentars-system för inbäddning på bloggar etc. Byggt med
+        Node.js, WebSockets och LevelDB.
+    - title: Ampersand Grid View
+      url: https://github.com/simme/ampersand-grid-view
+      description: Ett vy-bibliotek för Ampersand.js för att enkelt återskapa
+        den välkända Pinterest-layouten.
 - title: Redhill
   start: 2015-05
   end: present
+  description: Egen firma döpt efter platsen jag bor på. Frilansar som web och
+    iOS&#8209;utvecklare.
+  projects:
+    - title: kahnpedersen.se
+      url: http://kahnpedersen.se
+      description: En enkel Wordpress-site för den nystartade Advokatfirman
+        Kahn Pedersen. Tog projektet från design till deploy. Leveransen innehöll
+        även en detaljerad lathund för innehållsarbete på siten.
+    - title: antonsten.com
+      url: http://antonsten.com
+      description: Byggd på WordPress. Med hjälp utökningen "Papi" kan Anton
+        själv möblera om och arrangera varje sida precis som han vill ha den.

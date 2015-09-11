@@ -1,0 +1,45 @@
+.page-header {
+  width: 100%;
+  background: #444;
+  text-align: center;
+  padding: 100px 0;
+  color: #efefef;
+}
+
+  .page-title {
+    margin: 0;
+    font-weight: normal;
+    font-size: 4rem;
+    font-family: $sans-serif;
+  }
+
+  .page-tagline {
+    color: #eee;
+    font-family: $sans-serif;
+  }
+
+  .page-meta {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    margin: 20px auto;
+    padding: 20px;
+    justify-content: space-around;
+    max-width: 960px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+    .page-meta-item {
+      a {
+        color: #fff;
+        font-family: $sans-serif;
+      }
+    }
+
+  .me-description {
+    font-size: 2rem;
+    max-width: 960px;
+    margin: 40px auto;
+    font-family: $sans-serif;
+  }
