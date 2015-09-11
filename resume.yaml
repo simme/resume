@@ -1,0 +1,94 @@
+---
+info:
+  name: Simon Ljungberg
+  title: Web & iOS Developer
+  dob: 1988-03-02
+  adress: Kulleröd 4669, 280 20 Bjärnum
+  orgnr: 8803028292
+  email: hi@iamsim.me
+  phone: 073-067 08 83
+  github: simme
+  linkedin: https://se.linkedin.com/pub/simon-ljungberg/19/a44/5b6
+  twitter: '@simmelj'
+  instagram: '@simmelj'
+jobs:
+- title: NimNim Digital Workshop
+  location: Hässleholm
+  start: '2008'
+  end: 2009-11
+  description: Frilansade som webbutvecklare i cirka ett år efter resa i Australien.
+    Byggde lite WordPress men mest statisk HTML/CSS med inslag av PHP. Tyvärr finns
+    inga alster från den tiden kvar online. Hade stort fokus på webstandards och semantisk
+    HTML.
+  tech:
+  - HTML
+  - JavaScript
+  - CSS
+  - PHP
+  - WordPress
+- title: Good Old AB
+  url: http://goodold.se
+  location: Malmö
+  start: 2009-11
+  end: 2013-04
+  description: Jobbade som fullstack developer med i huvudsak Drupal men även en del
+    Wordpress. Fick även möjlighet att bygga ett gäng iPhone-appar.
+  tech:
+  - HTML
+  - JavaScript
+  - CSS
+  - PHP
+  - MySQL
+  - Drupal
+  - WordPress
+  - API-design
+  - iOS
+  - Cocos2D
+  - Node.js
+  projects:
+  - title: Skane.com
+    description: Konceptet för skane.com var att vem som helst kunde gå in och skapa
+      sin egna site. Innehållet på dessa siter syncades till en central site där det
+      indexerades för att möjliggöra sökning och filtrering. Alla siter var bygda
+      med Drupal och hanterades med hjälp av [Ægir](http://www.aegirproject.org) som
+      vi drev med ett API vi själva skrev. Indexeringen sköttes av Solr. Som mest
+      fanns ca 600 Drupal-siter i nätverket som jag till stor del var ansvarig för
+      att underhålla och uppdatera.
+  - title: Visitskane.com
+    url: http://visitskane.com
+    description: Var med och tog fram första versionen av [Visit Skåne](http://visitskane.com)
+      som idag ser mer eller mindre likadan ut. Var i huvudsak ansvarig för backend-bitarna
+      vilket delvis innefattade import av evenemangs-data från ett tredjeparts-system.
+      Denna import bygdes som en Node.js-applikation som regelbundet hämtade ny
+      data från evenemangsdatabasen och matade in det som innehåll i Drupal-siten
+      via ett skräddarsytt API.
+  - title: Bondgårdskex
+    description: Den första iOS-applikationen som jag byggde. En liten leksaks-app
+      riktad mot barn som lanserades i samband med en ny sorts kex; Bondgårdskex.
+      Appen byggdes med spelmotorn Cocos2D. Finns tyvärr inte kvar på App Store.
+  - title: Handbolls-VM, iOS-app
+    description: Tog, i sammarbete med Sony Ericsson, fram en app för Handbolls-VM.
+      En hybrid-app bygd med PhoneGap (numera Cordova) för att fungera på både
+      iOS och Android.
+  - title: Très Bien, popup store
+    description: Byggde en iPhone-app åt klädbutiken [Très Bien](http://tres-bien.com).
+      Konceptet var att om man befann sig på rätt plats vid rätt tidpunkt hade man
+      chans att vinna ett gratis plagg. Appen pratade med ett API som hämtade
+      data om vilka platser som var "öppna". GPS:en i telefonen användes för att
+      avgöra om användaren befann sig vid rätt plats.
+  - title: Öresundskraft, Avbrottshjälpen
+    url: https://itunes.apple.com/se/app/avbrottshjalpen/id524941095
+    description: iOS-app för felsökning av elavbrott. Byggde den första versionen
+      (inte samma som finns idag) av appen. En steg-för-steg-guide som var definerad
+      som en serie steg i en JSON-fil vilket gjorde att mängden iOS-kod var
+      väldigt liten.
+- title: Bloglovin
+  url: https://www.bloglovin.com
+  start: 2013-04
+  end: 2015-05
+  description: Som `Lead Front-end Developer` ansvarade jag för att bygga upp
+    en helt ny webfrontend för bloglovin.com. Vi byggde en Node.js-applikation
+    som pratade med ett API för att hämta data som sedan renderades med Jade.
+- title: Redhill
+  start: 2015-05
+  end: present

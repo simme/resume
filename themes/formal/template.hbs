@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{info.name}}</title>
+  </head>
+  <body>
+    <header class="page-header">
+      {{#with info}}
+        <h1>{{name}}</h1>
+        <span class="tagline">{{title}}</span>
+        <span class="dob">{{dob}}</span>
+      {{/with}}
+    </header>
+    <main role="main" class="page-main">
+      {{#each jobs}}
+        <section class="job">
+          <h2>{{title}}</h2>
+          <span class="date-range">{{start}} &mdash; {{end}}</span>
+        </section>
+      {{/each}}
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
