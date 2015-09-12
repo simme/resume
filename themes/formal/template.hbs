@@ -3,22 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>{{info.name}}</title>
-    <link rel="stylesheet" href="/build/formal/master.css">
-    <script src="https://use.typekit.net/awb4xot.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="/formal/master.css">
+    <meta name="viewport" content="initial-scale=1">
   </head>
   <body>
     <header class="page-header">
+      <img src="/formal/images/me.jpg" alt="Simon Ljungberg" class="avatar">
       {{#with info}}
         <h1 class="page-title">{{name}}</h1>
         <p class="page-tagline">{{title}}</p>
 
         <ul class="page-meta">
-          <li class="page-meta-item dob">{{dob}}</li>
           <li class="page-meta-item"><a href="tel://{{phone}}" class="phone">{{phone}}</a></li>
-          <li class="page-meta-item"><a href="https://github.com/{{github}}" class="github">{{github}}</a></li>
-          <li class="page-meta-item"><a href="https://twitter.com/{{twitter}}" class="twitter">{{twitter}}</a></li>
-          <li class="page-meta-item"><a href="https://instagram.com/{{instagram}}" class="instagram">{{instagram}}</a></li>
+          <li class="page-meta-item"><a href="mailto:{{email}}" class="email">{{email}}</a></li>
+          <li class="page-meta-item"><a href="https://github.com/{{github}}" class="github">GitHub</a></li>
+          <li class="page-meta-item"><a href="https://twitter.com/{{twitter}}" class="twitter">Twitter</a></li>
+          <li class="page-meta-item"><a href="https://instagram.com/{{instagram}}" class="instagram">Instagram</a></li>
+          <li class="page-meta-item"><a href="{{linkedin}}" class="linkedin">LinkedIn</a></li>
           <li class="page-meta-item"><a href="{{blog}}" class="blog">{{blog}}</a></li>
         </ul>
         <div class="me-description">{{{description}}}</div>
@@ -30,7 +31,7 @@
         {{> job}}
       {{/each}}
     </main>
-    <footer>
-    </footer>
+    <script src="https://use.typekit.net/awb4xot.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </body>
 </html>

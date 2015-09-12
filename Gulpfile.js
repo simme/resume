@@ -10,6 +10,10 @@ const through = require('through2');
 const Gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+const imageop = require('gulp-image-optimization');
+const critical = require('critical').stream;
+const minifyHTML = require('gulp-minify-html');
+const sequence = require('run-sequence');
 
 function render(theme, tpath) {
   var t = new Theme(theme, tpath);
@@ -37,7 +41,7 @@ Gulp.task('render', function() {
 
 Gulp.task('css', function () {
   Gulp.src('./themes/**/master.scss')
-    .pipe(sass())
+    .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(autoprefixer())
     .pipe(Gulp.dest('./build/'));
 });
@@ -47,3 +51,32 @@ Gulp.task('watch', function () {
   Gulp.watch('./themes/**/*.hbs', ['render']);
   Gulp.watch('./themes/**/*.scss', ['css']);
 });
+
+Gulp.task('images', function () {
+  Gulp.src('./themes/**/*.jpg')
+    .pipe(imageop())
+    .pipe(Gulp.dest('./build/'));
+});
+
+Gulp.task('critical', function () {
+  return Gulp.src('build/*.html')
+    .pipe(critical({
+      base: 'build/',
+      inline: true,
+      css: ['build/formal/master.css'],
+      width: 1300,
+      height: 900
+    }))
+    .pipe(Gulp.dest('build'));
+});
+
+Gulp.task('minifyHTML', function () {
+  return Gulp.src('./build/*.html')
+    .pipe(minifyHTML())
+    .pipe(Gulp.dest('./build/'));
+});
+
+Gulp.task('build', function (fn) {
+  sequence(['images', 'render', 'css', 'critical', 'minifyHTML'], fn);
+});
+

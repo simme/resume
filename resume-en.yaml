@@ -11,8 +11,8 @@ info:
   linkedin: https://se.linkedin.com/pub/simon-ljungberg/19/a44/5b6
   twitter: '@simmelj'
   instagram: '@simmelj'
-  blog: http://iamsim.me
-  description: Hallå, jag är en frilansande web och iOS-utvecklare med många års
+  blog: http://iamsim.me/
+  description: Hallå, jag är en frilansande web- och iOS-utvecklare med många års
     erfarenhet av att bygga digitala produkter på liten och stor skala.
 jobs:
 - title: NimNim Digital Workshop
@@ -69,7 +69,7 @@ jobs:
     description: Den första iOS-applikationen som jag byggde. En liten leksaks-app
       riktad mot barn som lanserades i samband med en ny sorts kex; Bondgårdskex.
       Appen byggdes med spelmotorn Cocos2D. Finns tyvärr inte kvar på App Store.
-  - title: Handbolls-VM, iOS-app
+  - title: Handbolls-VM
     description: Tog, i sammarbete med Sony Ericsson, fram en app för Handbolls-VM.
       En hybrid-app bygd med PhoneGap (numera Cordova) för att fungera på både
       iOS och Android.
@@ -80,7 +80,6 @@ jobs:
       data om vilka platser som var "öppna". GPS:en i telefonen användes för att
       avgöra om användaren befann sig vid rätt plats.
   - title: Öresundskraft, Avbrottshjälpen
-    url: https://itunes.apple.com/se/app/avbrottshjalpen/id524941095
     description: iOS-app för felsökning av elavbrott. Byggde den första versionen
       (inte samma som finns idag) av appen. En steg-för-steg-guide som var definerad
       som en serie steg i en JSON-fil vilket gjorde att mängden iOS-kod var
@@ -110,11 +109,16 @@ jobs:
     [Ampersand.js](http://ampersandjs.com). Här är några av mina
     personliga favoriter.
   projects:
+    - title: Resume
+      url: https://github.com/simme/resume
+      description: Detta CV. Började som en enkel idé att spara CV:et i ett enkelt
+        dataformat för att enkelt kunna presentera det i olika skepnader. Slutade
+        i en statisk site-genererare.
     - title: Browbeat
       url: https://github.com/simme/browbeat
       description: Ett experimentelt bibliotek vars syfte var att förenkla
         kommunikation mellan flera browserfönster. Använder Bully-algoritmen för
-        att välja ett "chefs" fönster. Detta för att kunna optimera användning av
+        att välja ett "chefs-fönster". Detta för att kunna optimera användning av
         resurser så som websockets.
     - title: Tala
       url: https://github.com/simme/node-tala

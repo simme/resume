@@ -2,7 +2,7 @@
   max-width: 960px;
   margin: 40px auto;
   display: flex;
-  border-top: 1px solid #000;
+  border-top: 1px solid #1C2F3D;
   padding: 20px 0;
 }
 
@@ -34,6 +34,7 @@
     font-family: $sans-serif;
     margin-bottom: 40px;
     color: #444;
+    a { font-size: 1.2rem; }
 
     p {
       margin-top: 0;
@@ -75,15 +76,40 @@
     font-size: 1.4rem;
     margin: 0 0 3px 0;
     font-family: $sans-serif;
+    color: #444;
   }
 
   .project-description {
     font-size: 1.2rem;
+    a { font-size: 1.2rem; }
 
     p {
-      margin-top: 0;
+      margin: 0 0 15px 0;
       line-height: 1.7;
       font-family: $serif;
       color: #333;
     }
   }
+
+  .project-visit {
+    position: relative;
+    &:after {
+      content: "»";
+      position: absolute;
+      right: 5px;
+      opacity: 0;
+      transition: all .2s ease-in-out;
+    }
+
+    &:hover, &:focus {
+      &:after {
+        opacity: 1;
+        transform: translateX(15px);
+      }
+    }
+  }
+
+@media #{$msmall} {
+  .job { display: block; }
+  .job-data { padding: 0; }
+}

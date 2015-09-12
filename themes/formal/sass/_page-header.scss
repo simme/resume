@@ -1,6 +1,6 @@
 .page-header {
   width: 100%;
-  background: #444;
+  background: #3F3D47 linear-gradient(to bottom, #3F3D47, lighten(#3F3D47, 10%));
   text-align: center;
   padding: 100px 0;
   color: #efefef;
@@ -15,27 +15,52 @@
 
   .page-tagline {
     color: #eee;
+    font-size: 2rem;
     font-family: $sans-serif;
+    margin: 10px 0 40px 0;
   }
 
   .page-meta {
     display: flex;
     width: 100%;
     list-style: none;
-    margin: 20px auto;
-    padding: 20px;
-    justify-content: space-around;
+    margin: 50px auto;
+    padding: 0;
+    justify-content: space-between;
     max-width: 960px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
   }
 
     .page-meta-item {
+      font-size: 1.2rem;
+      text-align: center;
+
       a {
+        display: block;
+        padding: 10px;
         color: #fff;
-        font-family: $sans-serif;
+        text-decoration: none;
       }
     }
+
+@media #{$mbig} {
+  .page-meta-item {
+    a {
+      display: block;
+      padding: 20px;
+      color: #fff;
+      font-family: $sans-serif;
+      transition: all .2s ease-in-out;
+
+      &:hover, &:focus {
+        border-top: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+        padding: 16px 20px;
+      }
+    }
+  }
+}
 
   .me-description {
     font-size: 2rem;
@@ -43,3 +68,18 @@
     margin: 40px auto;
     font-family: $sans-serif;
   }
+
+  .avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 18px rgba(#000, .3);
+  }
+
+@media #{$msmall} {
+  .page-meta {
+    display: block;
+  }
+}
