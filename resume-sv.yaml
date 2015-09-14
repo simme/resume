@@ -1,7 +1,7 @@
 ---
 info:
   name: Simon Ljungberg
-  title: Web & iOS Developer
+  title: Web- & iOS-utvecklare
   dob: 1988-03-02
   adress: Kulleröd 4669, 280 20 Bjärnum
   orgnr: 8803028292
@@ -12,8 +12,39 @@ info:
   twitter: '@simmelj'
   instagram: '@simmelj'
   blog: http://iamsim.me/
+  ga: UA-67529180-2
+  webmasterTools: CM7OaK760dANHRKRo9mnVLntSLPyOs8A6qvGvADbLJ4
   description: Hallå, jag är en frilansande web- och iOS-utvecklare med många års
     erfarenhet av att bygga digitala produkter på liten och stor skala.
+letter:
+  title: Vem är Simon?
+  description: >
+    Ända sedan någon gång i början av mellanstadiet har jag varit
+    fullkomligt fascinerad över det faktum att jag kan skriva lite kod i en
+    textfil som resulterar i att saker och ting händer på datorn.
+    När det blev möjligt att dela med sig av sina skapelser via internet och
+    människor på andra sidan jorden kunde ta del av det jag skapat ökade
+    fascinationen ännu mer! Sen kom iPhonen och det blev möjligt att **ta**
+    på det jag skapat, det höjde fascinationen ytterligare lite till.
+
+
+    Idag är internet och appar en viktig del av vår vardag. De finns i allt vi gör.
+    Därför är det oerhört viktigt att de digitala upplevelser som vi kommer i
+    kontakt med är responsiva och fungerar som vi tänkt oss. Det innebär att
+    hemsidor måste ladda snabbt, fungera på en mängd olika skärmstorlekar och
+    internet-uppkopplingar. Med snart tio år i branchen som yrkesutövare och
+    snart 20 på hobbynivå så **"kan jag webben"**.
+
+
+    När jag inte knappar på tangentbordet leker jag bonde på min och min frus gård.
+    Eller är i skogen med hunden eller på hästryggen. Kanske sitter jag vid pianot.
+    Ibland är jag till och med inlåst i ett mörkt rum med massa kemikalier
+    &mdash; för att framkalla film alltså.
+
+
+    En sak som är säkert är att jag är oerhört pepp på att jobba med grymma människor
+    för att hjälpa dem att förverkliga sina tankar och idéer. Behöver du hjälp med
+    detta får du gärna ta kontakt med mig!
 jobs:
 - title: NimNim Digital Workshop
   location: Hässleholm
@@ -52,7 +83,7 @@ jobs:
   - title: Skane.com
     description: Konceptet för skane.com var att vem som helst kunde gå in och skapa
       sin egna site. Innehållet på dessa siter syncades till en central site där det
-      indexerades för att möjliggöra sökning och filtrering. Alla siter var bygda
+      indexerades för att möjliggöra sökning och filtrering. Alla siter var byggda
       med Drupal och hanterades med hjälp av [Ægir](http://www.aegirproject.org) som
       vi drev med ett API vi själva skrev. Indexeringen sköttes av Solr. Som mest
       fanns ca 600 Drupal-siter i nätverket som jag till stor del var ansvarig för
@@ -62,7 +93,7 @@ jobs:
     description: Var med och tog fram första versionen av [Visit Skåne](http://visitskane.com)
       som idag ser mer eller mindre likadan ut. Var i huvudsak ansvarig för backend-bitarna
       vilket delvis innefattade import av evenemangs-data från ett tredjeparts-system.
-      Denna import bygdes som en Node.js-applikation som regelbundet hämtade ny
+      Denna import byggdes som en Node.js-applikation som regelbundet hämtade ny
       data från evenemangsdatabasen och matade in det som innehåll i Drupal-siten
       via ett skräddarsytt API.
   - title: Bondgårdskex
@@ -70,8 +101,8 @@ jobs:
       riktad mot barn som lanserades i samband med en ny sorts kex; Bondgårdskex.
       Appen byggdes med spelmotorn Cocos2D. Finns tyvärr inte kvar på App Store.
   - title: Handbolls-VM
-    description: Tog, i sammarbete med Sony Ericsson, fram en app för Handbolls-VM.
-      En hybrid-app bygd med PhoneGap (numera Cordova) för att fungera på både
+    description: Tog fram en app för Handbolls-VM.
+      En hybrid-app byggd med PhoneGap (numera Cordova) för att fungera på både
       iOS och Android.
   - title: Très Bien, popup store
     description: Byggde en iPhone-app åt klädbutiken [Très Bien](http://tres-bien.com).
@@ -100,7 +131,7 @@ jobs:
     - title: Furcape
       url: https://github.com/bloglovin/furcape
       description: Byggde grunden till ett system för AB-testning. Detta byttes
-        senare ut. Men denna kod skötte AB-testning på Bloglovin.com i ca. ett år.
+        senare ut. Men denna kod skötte AB-testningen på Bloglovin.com i ca. ett år.
 - title: Open Source
   start: 2008
   end: present
@@ -122,7 +153,7 @@ jobs:
         resurser så som websockets.
     - title: Tala
       url: https://github.com/simme/node-tala
-      description: Kommentars-system för inbäddning på bloggar etc. Byggt med
+      description: Kommentarssystem för inbäddning på bloggar etc. Byggt med
         Node.js, WebSockets och LevelDB.
     - title: Ampersand Grid View
       url: https://github.com/simme/ampersand-grid-view
@@ -131,7 +162,7 @@ jobs:
 - title: Redhill
   start: 2015-05
   end: present
-  description: Egen firma döpt efter platsen jag bor på. Frilansar som web och
+  description: Egen firma döpt efter platsen jag bor på. Frilansar som web- och
     iOS&#8209;utvecklare.
   projects:
     - title: kahnpedersen.se
@@ -143,3 +174,8 @@ jobs:
       url: http://antonsten.com
       description: Byggd på WordPress. Med hjälp utökningen "Papi" kan Anton
         själv möblera om och arrangera varje sida precis som han vill ha den.
+i18n:
+  current: pågående
+  experience: Erfarenhet
+  sampleProjects: Projektexempel
+  locale: se_SV
