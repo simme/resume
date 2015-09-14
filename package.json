@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "gulp clean && gulp images && gulp render && gulp css && gulp critical && gulp minifyHTML && ./deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "async": "^1.4.2",
+    "base64-img": "^1.0.3",
     "gulp-minify-html": "^1.0.4",
     "handlebars": "^4.0.2",
     "js-yaml": "^3.4.2",
@@ -21,6 +23,7 @@
     "browserify": "^11.1.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
+    "gulp-clean": "^0.3.1",
     "gulp-image-optimization": "^0.1.3",
     "gulp-minify-css": "^1.2.1",
     "gulp-sass": "^2.0.4",

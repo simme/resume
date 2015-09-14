@@ -14,6 +14,7 @@ const imageop = require('gulp-image-optimization');
 const critical = require('critical').stream;
 const minifyHTML = require('gulp-minify-html');
 const sequence = require('run-sequence');
+const clean = require('gulp-clean');
 
 function render(theme, tpath) {
   var t = new Theme(theme, tpath);
@@ -65,7 +66,7 @@ Gulp.task('critical', function () {
       inline: true,
       css: ['build/formal/master.css'],
       width: 1300,
-      height: 900
+      height: 900,
     }))
     .pipe(Gulp.dest('build'));
 });
@@ -76,7 +77,11 @@ Gulp.task('minifyHTML', function () {
     .pipe(Gulp.dest('./build/'));
 });
 
-Gulp.task('build', function (fn) {
-  sequence(['images', 'render', 'css', 'critical', 'minifyHTML'], fn);
+Gulp.task('clean', function () {
+  return Gulp.src('./build', {read: false})
+    .pipe(clean());
 });
 
+Gulp.task('build', function (fn) {
+  sequence('images', 'render', 'css', 'critical', 'minifyHTML', fn);
+});

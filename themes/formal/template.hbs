@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{i18n.locale}}">
   <head>
     <meta charset="utf-8">
     <title>{{info.name}}</title>
     <link rel="stylesheet" href="/formal/master.css">
     <meta name="viewport" content="initial-scale=1">
+
+    <meta name="og:title" content="{{info.title}}">
+    <meta name="og:image" content="/formal/images/me.jpg">
+    <meta name="og:description" content="{{info.description}}">
+    <meta name="og:locale" content="{{i18n.locale}}">
+    <meta name="og:site_name" content="Simon Ljungberg">
+    <meta name="og:type" content="website">
+
+    <meta name="google-site-verification" content="{{info.webmasterTools}}" />
   </head>
   <body>
     <header class="page-header">
@@ -26,12 +35,38 @@
       {{/with}}
     </header>
     <main role="main" class="page-main">
-      <h2 class="section-title">Erfarenhet</h2>
+      <section class="job">
+        {{#with letter}}
+          <!-- Is this perfect HTML? Is this perfect use of the `job`-component?
+            No. No, it's not. But sometimes one has to be pragmatic and get shit
+            done. You know! -->
+          <h3 class="job-title">{{title}}</h3>
+          <span class="job-date-range">&nbsp;</span>
+          <div class="job-data">
+            <div class="job-description">
+              {{md description}}
+            </div>
+          </div>
+        {{/with}}
+      </section>
+      <h2 class="section-title">{{ i18n.experience}}</h2>
       {{#each jobs}}
-        {{> job}}
+        {{#include parent=..}}
+          {{> job this}}
+        {{/include}}
       {{/each}}
     </main>
     <script src="https://use.typekit.net/awb4xot.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '{{info.ga}}', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>
