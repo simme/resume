@@ -6,23 +6,56 @@ info:
   adress: Kulleröd 4669, 280 20 Bjärnum
   orgnr: 8803028292
   email: hi@iamsim.me
-  phone: 073-067 08 83
+  phone: +46 (0)73-067 08 83
   github: simme
   linkedin: https://se.linkedin.com/pub/simon-ljungberg/19/a44/5b6
   twitter: '@simmelj'
   instagram: '@simmelj'
   blog: http://iamsim.me/
-  description: Hallå, jag är en frilansande web- och iOS-utvecklare med många års
-    erfarenhet av att bygga digitala produkter på liten och stor skala.
+  ga: UA-67529180-1
+  webmasterTools: nn-PariBn53QVgvHi0y2VwdjHfNhCl4OLJFXjE-7f0A
+  description: Hey, I'm a freelancing web and iOS developer with many years
+    of experience building big and small digital products.
+letter:
+  title: Who is Simon?
+  description: >
+    Ever since some time in middle school I've been utterly fascinated by the fact
+    that I can type stuff on my keyboard and make a computer do stuff. When it
+    became possible to share my creations on the internet, for people all around
+    the world to see, this fascination multiplied. And later when it became possible
+    to make my creations run on a piece of glass &mdash; the iPhone &mdash; that
+    one could **touch**, the fascination increased ever so slightly more.
+
+
+    Today the internet and apps are an integral part of our everyday lives. They
+    are a part of almost everything that we do. Therefore it's incredibly important
+    that the digital experience that we come in contact with are responsive and
+    work without making us think too hard. It means that web sites have to load
+    instantly, work on a myriad of screen sizes and internet connections. With
+    almost ten years of professional experience, and soon 20 as an amateur, I
+    can say without lying that I **know the web**.
+
+
+    When I'm not typing on my keyboard I might be joining my wife for a ride in
+    the forest with our horses. Or I might be walking my dog. There's a certain
+    chance that I'm by the piano tapping another kind of keys. Or maybe I'm
+    locked in a dark room with a bunch of chemicals &mdash; developing film of
+    course.
+
+
+    One thing that's for certain is that I am psyched to work with amazing
+    people to realize their ideas. Should you happen to be one of these people,
+    and I think you might be, don't hesitate to contact me! I think we can have
+    a lot of fun while we build something great together!
 jobs:
 - title: NimNim Digital Workshop
   location: Hässleholm
   start: '2008'
   end: 2009-11
-  description: Frilansade som webbutvecklare i cirka ett år efter resa i Australien.
-    Byggde lite WordPress men mest statisk HTML/CSS med inslag av PHP. Tyvärr finns
-    inga alster från den tiden kvar online. Hade stort fokus på webstandards och semantisk
-    HTML.
+  description: Did contract web work for about a year after a trip to Australia.
+    Worked some with WordPress but mostly did static HTML/CSS with some PHP sprinkled
+    on top. Unfortunately nothing from that era remains online. Had a big focus
+    on webstandards and semantic HTML.
   tech:
   - HTML
   - JavaScript
@@ -34,8 +67,8 @@ jobs:
   location: Malmö
   start: 2009-11
   end: 2013-04
-  description: Jobbade som fullstack developer med i huvudsak Drupal men även en del
-    Wordpress. Fick även möjlighet att bygga ett gäng iPhone-appar.
+  description: Worked as a full stack developer with mainly Drupal but also some
+    WordPress. Got the opportunity to build several iPhone apps.
   tech:
   - HTML
   - JavaScript
@@ -50,96 +83,103 @@ jobs:
   - Node.js
   projects:
   - title: Skane.com
-    description: Konceptet för skane.com var att vem som helst kunde gå in och skapa
-      sin egna site. Innehållet på dessa siter syncades till en central site där det
-      indexerades för att möjliggöra sökning och filtrering. Alla siter var bygda
-      med Drupal och hanterades med hjälp av [Ægir](http://www.aegirproject.org) som
-      vi drev med ett API vi själva skrev. Indexeringen sköttes av Solr. Som mest
-      fanns ca 600 Drupal-siter i nätverket som jag till stor del var ansvarig för
-      att underhålla och uppdatera.
+    description: The concept of skane.com was that anyone could log in and create
+      their own website. The contents of these sites were aggregated to a central
+      site where it was indexed for search. All sites where built with Drupal
+      and were managed using [Ægir](http://www.aegirproject.org). The search
+      index was managed using Solr. At its peak we had 600 Drupal sites in the
+      network which I to a large degree was responsible for managing and updating.
   - title: Visitskane.com
     url: http://visitskane.com
-    description: Var med och tog fram första versionen av [Visit Skåne](http://visitskane.com)
-      som idag ser mer eller mindre likadan ut. Var i huvudsak ansvarig för backend-bitarna
-      vilket delvis innefattade import av evenemangs-data från ett tredjeparts-system.
-      Denna import bygdes som en Node.js-applikation som regelbundet hämtade ny
-      data från evenemangsdatabasen och matade in det som innehåll i Drupal-siten
-      via ett skräddarsytt API.
+    description: Helped build the first version of Visit Skåne. It looks more or
+      less the same today. I was mainly responsible for building the backend
+      bits which involved an import of event data from a third party system.
+      This import was build as a Node.js application that regularly fetched new
+      data from the event database. Events were then put into the Drupal site
+      using a tailor made API.
   - title: Bondgårdskex
-    description: Den första iOS-applikationen som jag byggde. En liten leksaks-app
-      riktad mot barn som lanserades i samband med en ny sorts kex; Bondgårdskex.
-      Appen byggdes med spelmotorn Cocos2D. Finns tyvärr inte kvar på App Store.
+    description: The first iOS-application I built. A tiny toy app for kids. It
+      launched together with a new kind of cookies from one of Sweden's largest
+      cookie companies, Göteborgskex. The app was built using Cocos2D. Unfortunately
+      it is no longer available on the App Store.
   - title: Handbolls-VM
-    description: Tog, i sammarbete med Sony Ericsson, fram en app för Handbolls-VM.
-      En hybrid-app bygd med PhoneGap (numera Cordova) för att fungera på både
-      iOS och Android.
+    description: Built an app for the Handball World Championship. A hybrid app
+      built with PhoneGap (renamed Cordova) to work on both iOS and Android.
   - title: Très Bien, popup store
-    description: Byggde en iPhone-app åt klädbutiken [Très Bien](http://tres-bien.com).
-      Konceptet var att om man befann sig på rätt plats vid rätt tidpunkt hade man
-      chans att vinna ett gratis plagg. Appen pratade med ett API som hämtade
-      data om vilka platser som var "öppna". GPS:en i telefonen användes för att
-      avgöra om användaren befann sig vid rätt plats.
+    description: Built an iPhone app for the clothing store
+      [Très Bien](http://tres-bien.com). The app was a popup store that would
+      award you with a free piece of clothing if you stood at the right place at
+      the right time. The app talked to an API that fetched data about the locations
+      and times that were "open". The GPS in the phone was used to determine if
+      the user was legible for the prize.
   - title: Öresundskraft, Avbrottshjälpen
-    description: iOS-app för felsökning av elavbrott. Byggde den första versionen
-      (inte samma som finns idag) av appen. En steg-för-steg-guide som var definerad
-      som en serie steg i en JSON-fil vilket gjorde att mängden iOS-kod var
-      väldigt liten.
+    description: An iOS-app for trouble shooting power outages in your house. Built
+      the first version of the app (no longer available). A step-by-step guide
+      which was defined as a JSON-file. The entirity of the app UI was data driven
+      based on that JSON.
 - title: Bloglovin
   url: https://www.bloglovin.com
   start: 2013-04
   end: 2015-05
-  description: Som **Lead Front-end Developer** ansvarade jag för att bygga upp
-    en helt ny webfrontend för bloglovin.com. Vi byggde en Node.js-applikation
-    som pratade med ett API för att hämta data som sedan renderades med Jade.
+  description: As the **Lead Front-end Developer** I was responsible for building
+    up an entirely new front end application for bloglovin.com. As well as handling
+    many API and back end related tasks.
   projects:
     - title: www.bloglovin.com
       url: https://www.bloglovin.com
-      description: Node.js-applikation som hanterade kommunikation mot ett API
-        för att hämta användardata och rendera HTML. Servade som mest 30M unika
-        besökare per månad.
+      description: A Node.js application that managed communication with an API
+        to get user data and render HTML using Jade. At its peaked this application
+        served about 30M unique visitors per month.
     - title: Furcape
       url: https://github.com/bloglovin/furcape
-      description: Byggde grunden till ett system för AB-testning. Detta byttes
-        senare ut. Men denna kod skötte AB-testning på Bloglovin.com i ca. ett år.
+      description: Built the foundation for a AB-testing system. It was later
+        replaced but during its one year service it handled the AB-testing on
+        bloglovin.com
 - title: Open Source
   start: 2008
   end: present
-  description: Mitt [GitHub-konto](https://github.com/simme) innehåller mycket
-    kod som jag släppt öppen. Mycket av det relaterar till
-    [Ampersand.js](http://ampersandjs.com). Här är några av mina
-    personliga favoriter.
+  description: My [GitHub account](https://github.com/simme) contains a lot of
+    code that I've released into the open. Some of it is related to
+    [Ampersand.js](http://ampersandjs.com) but a lot is independent code.
+    Here are a few of my favorites.
   projects:
-    - title: Resume
+    - title: Résumé
       url: https://github.com/simme/resume
-      description: Detta CV. Började som en enkel idé att spara CV:et i ett enkelt
-        dataformat för att enkelt kunna presentera det i olika skepnader. Slutade
-        i en statisk site-genererare.
+      description: The résumé you're currently reading. It started out as a
+        simple idea to store my résumé in a presentation agnostic format, ie
+        "pure data". This to make it easy to show it in different shapes depending
+        on my current needs. Ended up being a simple static site generator.
     - title: Browbeat
       url: https://github.com/simme/browbeat
-      description: Ett experimentelt bibliotek vars syfte var att förenkla
-        kommunikation mellan flera browserfönster. Använder Bully-algoritmen för
-        att välja ett "chefs-fönster". Detta för att kunna optimera användning av
-        resurser så som websockets.
+      description: An experimental library whose purpose was to simplify
+        cross window communication on a website. It uses the Bully-algorithm to
+        elect a "president window". This is to better optimize the usage of
+        resources such as web sockets.
     - title: Tala
       url: https://github.com/simme/node-tala
-      description: Kommentars-system för inbäddning på bloggar etc. Byggt med
-        Node.js, WebSockets och LevelDB.
+      description: A self-hosted real time commenting system for embeding on blogs.
+        Built with Node.js, WebSockets and LevelDB.
     - title: Ampersand Grid View
       url: https://github.com/simme/ampersand-grid-view
-      description: Ett vy-bibliotek för Ampersand.js för att enkelt återskapa
-        den välkända Pinterest-layouten.
+      description: A view library for Ampersand.js to easily replicate the
+        famous Pinterest layout.
 - title: Redhill
   start: 2015-05
   end: present
-  description: Egen firma döpt efter platsen jag bor på. Frilansar som web och
-    iOS&#8209;utvecklare.
+  description: My own company named after the place I live. I do freelance web
+    and iOS contracting work.
   projects:
     - title: kahnpedersen.se
       url: http://kahnpedersen.se
-      description: En enkel Wordpress-site för den nystartade Advokatfirman
-        Kahn Pedersen. Tog projektet från design till deploy. Leveransen innehöll
-        även en detaljerad lathund för innehållsarbete på siten.
+      description: A simple WordPress site for the newly started law firm
+        Advokatfirman Kahn Pedersen. I took the project from design to deploy
+        and also wrote a detailed manual for content related tasks on the site.
     - title: antonsten.com
       url: http://antonsten.com
-      description: Byggd på WordPress. Med hjälp utökningen "Papi" kan Anton
-        själv möblera om och arrangera varje sida precis som han vill ha den.
+      description: Built with WordPress. With the plugin "Papi" Anton has the
+        ability to rearrange and build custom pages just like he wants them.
+i18n:
+  current: current
+  experience: Experience
+  sampleProjects: Sample Projects
+  locale: en_US
