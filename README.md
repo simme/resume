@@ -19,5 +19,5 @@ Run `cd build && http-server` and open [localhost:8080](http://localhost:8080) t
 
 ## Contributors
 
-* [Simon Ljungberg](http://simonljungberg.com/) [Author]
-* [Karun Japhet](http://karun.me)
+* [Simon Ljungberg](http://simonljungberg.com/) - Author
+* [Karun Japhet](http://karun.me) - Minor cleanups
