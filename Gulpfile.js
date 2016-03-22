@@ -85,3 +85,7 @@ Gulp.task('clean', function () {
 Gulp.task('build', function (fn) {
   sequence('images', 'render', 'css', 'critical', 'minifyHTML', fn);
 });
+
+Gulp.task('default', function(fn) {
+  sequence('clean', 'images', 'render', 'css', 'critical', 'minifyHTML', fn);
+});
